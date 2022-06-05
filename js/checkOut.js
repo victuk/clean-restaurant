@@ -5,6 +5,6 @@ const address = document.getElementById('address');
 const submitButton = document.getElementById('submit');
 
 submitButton.addEventListener('click', function() {
-    console.log(personsName, email, phone, address);
+    console.log(personsName.value, email.value, phone.value, address.value);
     alert('Order Successful');
 });
