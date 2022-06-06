@@ -77,7 +77,7 @@
 
 	</div>
 
-	<div style="width: 100%;" id="total">
+	<div style="width: 100%; display: flex; flex-direction: column; align-items: center;" id="total">
 		
 	</div>
 
@@ -93,7 +93,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<form id="contactForm">
+					
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
@@ -123,13 +123,13 @@
 							<div class="col-md-12">
 								
 								<div class="submit-button text-center">
-									<button class="btn btn-common" id="submit">Place Order</button>
-									<div id="msgSubmit" class="h3 text-center hidden"></div> 
-									<div class="clearfix"></div> 
+									<button class="btn btn-common" onclick="payWithPaystack()">Place Order</button>
+									<!-- <div id="msgSubmit" class="h3 text-center hidden"></div> 
+									<div class="clearfix"></div>  -->
 								</div>
 							</div>
 						</div>            
-					</form>
+					
 				</div>
 			</div>
 		</div>
@@ -229,24 +229,32 @@
 	
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
+	<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+	<script type="text/javascript">
+	  emailjs.init('uEvO_edzpvZuBmxKj')
+	</script>
+
 	<script src="js/cartController.js"></script>
 	<script src="js/checkOut.js"></script>
 
 	<!-- ALL JS FILES -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+	<!-- <script src="js/popper.min.js"></script> -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
     <!-- ALL PLUGINS -->
 	
-	<script src="js/jquery.superslides.min.js"></script>
-	<script src="js/images-loded.min.js"></script>
-	<script src="js/isotope.min.js"></script>
-	<script src="js/baguetteBox.min.js"></script>
-	<script src="js/jquery.mapify.js"></script>
-	<script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
-	<script>
+	<!-- <script src="js/jquery.superslides.min.js"></script> -->
+	<!-- <script src="js/images-loded.min.js"></script> -->
+	<!-- <script src="js/isotope.min.js"></script> -->
+	<!-- <script src="js/baguetteBox.min.js"></script> -->
+	<!-- <script src="js/jquery.mapify.js"></script> -->
+	<!-- <script src="js/form-validator.min.js"></script> -->
+    <!-- <script src="js/contact-form-script.js"></script> -->
+    <!-- <script src="js/custom.js"></script> -->
+	<!-- <script>
 		$('.map-full').mapify({
 			points: [
 				{
@@ -258,6 +266,6 @@
 				}
 			]
 		});	
-	</script>
+	</script> -->
 </body>
 </html>

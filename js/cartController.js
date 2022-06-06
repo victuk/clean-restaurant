@@ -115,6 +115,8 @@ function deleteItem(id) {
   showCartDetails()
 }
 
+let totalGlobalPrice;
+
 function totalSummary() {
   let totalPrice = 0;
   let quantity = 0;
@@ -125,6 +127,7 @@ function totalSummary() {
   }
   document.getElementById('total').innerHTML = `<h3 id="total-items">Quantity: ${quantity}</h3>
   <h2>Amount: ${totalPrice}</h2>`;
+  totalGlobalPrice = totalPrice;
 }
 
 showCartDetails();

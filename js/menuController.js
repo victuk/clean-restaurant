@@ -8,7 +8,7 @@ data.forEach(item => {
 					<div class="gallery-single fix">
 						<img src="${item.img}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 1</h4>
+							<h4>${item.name}</h4>
 							<p>Category: ${item.category}</p>
 							<h5>N${item.price}</h5>
                             <div id="add-to-cart" style="pointer: cursor;" onclick='addToCart(${item.id})'>Add</div>
