@@ -74,7 +74,7 @@ var data = [
     },
     {
         id: 9,
-        img: 'images/img-08.jpg',
+        img: 'images/star.jpg',
         name: 'Star',
         price: 1400,
         category: 'drink',
@@ -82,7 +82,7 @@ var data = [
     },
     {
         id: 10,
-        img: 'images/img-08.jpg',
+        img: 'images/img-08.png',
         name: 'Fanta',
         price: 1400,
         category: 'drink',
@@ -90,7 +90,7 @@ var data = [
     },
     {
         id: 11,
-        img: 'images/img-08.jpg',
+        img: 'images/fanta.png',
         name: 'Coke',
         price: 1400,
         category: 'drink',
