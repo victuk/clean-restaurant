@@ -70,7 +70,7 @@ function showCartDetails() {
       <div><button onclick="changeQuantity(${cartItem.id}, 'sub', ${cartItem.quantity})" style="padding: 5px; border: none; background-color: #d0a772; color: white; padding: 0 10px;"> - </button> <button onclick="changeQuantity(${cartItem.id}, 'add')" style="padding: 5px; border: none; background-color: #d0a772; color: white; padding: 0 10px;"> + </button></div>
       <h3 class="pay">${cartItem.price}</h3>
       <h3>${cartItem.price * cartItem.quantity}</h3>
-      <button style="height: 40px;" onclick="deleteItem(${cartItem.id})">Delete</button>
+      <button style="height: 40px; border: none; background-color: #d0a772; color: white;" onclick="deleteItem(${cartItem.id})">Delete</button>
       </div>`;
     });
   }
@@ -112,7 +112,8 @@ function deleteItem(id) {
     }
   }
   localStorage.setItem('cartItems', JSON.stringify(totalCartArray));
-  showCartDetails()
+  showCartDetails();
+  totalSummary();
 }
 
 let totalGlobalPrice;
@@ -131,3 +132,9 @@ function totalSummary() {
 }
 
 showCartDetails();
+
+function clearCart() {
+  localStorage.setItem('cartItems', JSON.stringify([]));
+  showCartDetails();
+  totalSummary();
+}

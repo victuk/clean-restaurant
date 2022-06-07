@@ -12,7 +12,7 @@ data.forEach(item => {
 							<h4>${item.name}</h4>
 							<p>Category: ${item.category}</p>
 							<h5>N${item.price}</h5>
-                            <div id="add-to-cart" style="pointer: cursor;" onclick='addToCart(${item.id})'>Add</div>
+                            <div id="add-to-cart" style="color: white; font-weight: bold; font-size: 20px; cursor: pointer; display: inline-block;" onclick='addToCart(${item.id})'>Add</div>
 						</div>
 					</div>
 				</div> 
@@ -31,7 +31,7 @@ function filterCategories(control) {
                                 <h4>Special Drinks 1</h4>
                                 <p>Category: ${item.category}</p>
                                 <h5>N${item.price}</h5>
-                                <div id="add-to-cart" onclick='addToCart(${item.id})'>Add</div>
+                                <div id="add-to-cart" style="color: white; font-weight: bold; font-size: 20px; cursor: pointer; display: inline-block;" onclick='addToCart(${item.id})'>Add</div>
                             </div>
                         </div>
                     </div> 
@@ -52,7 +52,7 @@ function filterCategories(control) {
                                     <h4>Special Drinks 1</h4>
                                     <p>Category: ${item.category}</p>
                                     <h5>N${item.price}</h5>
-                                    <div id="add-to-cart" onclick='addToCart(${item.id})'>Add</div>
+                                    <div id="add-to-cart" style="color: white; font-weight: bold; font-size: 20px; cursor: pointer; display: inline-block;" onclick='addToCart(${item.id})'>Add</div>
                                 </div>
                             </div>
                         </div> 

@@ -5,10 +5,10 @@ const address = document.getElementById('address');
 const paymentForm = document.getElementById('placeOrder');
 const totalAmount = document.getElementById('total');
 
-const restaurantOwnerEmail = '';
+const restaurantOwnerEmail = 'victorp3tr@gmail.com';
 
 function payWithPaystack() {
-    console.log(totalGlobalPrice);
+
   let handler = PaystackPop.setup({
     key: 'pk_test_8a461ca142641ca634dc9dec5dc7bee44c5e79c0', // Replace with your public key
     email: email.value,
@@ -20,14 +20,37 @@ function payWithPaystack() {
     },
     callback: function(response){
       let message = 'Payment complete! Reference: ' + response.reference;
-      console.log(personsName.value, email.value, phone.value, address.value);
-        console.log(message);
         const serviceID = 'service_k7yj1dx';
         const templateID = 'template_dekmsp8';
-      emailjs.send(serviceID, templateID, {name: `New Order from ${email.value}`, email: email.value, message: `Phone Number: ${phone.value}, \n Address: ${address.value}, \n Order details ${JSON.stringify(totalCartArray)}`})
+        let orderList = '\n Order List \n';
+
+        for(let i = 0; i < totalCartArray.length; i++) {
+          orderList += `
+            Product ID: ${totalCartArray[i].id}
+            Name: ${totalCartArray[i].name}
+            Price per ${totalCartArray[i].name}: ${totalCartArray[i].price}
+            Quantity: ${totalCartArray[i].quantity}
+            Total Price for quantity: ${totalCartArray[i].price * totalCartArray[i].quantity}
+          `;
+        }
+
+    //   emailjs.send(serviceID, templateID, {name: `New Order from ${restaurantOwnerEmail}`, email: restaurantOwnerEmail, message: `<div>Phone Number: ${phone.value}, \n Address: ${address.value}, \n ${orderList}</div>`})
+    // .then(() => {
+    //   console.log("Email delivered");
+    // }, (err) => {
+    //   alert(JSON.stringify(err));
+    // });
+
+    emailjs.send(serviceID, templateID, {name: personsName.value, email: email.value, message: `Order from ${personsName.value} (${email.value}) has been received. \n \n ${orderList} \n \n Total Price: ${totalGlobalPrice}`})
     .then(() => {
-      
-      alert('Sent!');
+      alert("Customer Email Delivered.");
+      email.value = '';
+      personsName.value = '';
+      phone.value = '';
+      address.value = '';
+      localStorage.setItem('cartItems', JSON.stringify([]));
+      showCartDetails();
+      totalSummary();
     }, (err) => {
       alert(JSON.stringify(err));
     });

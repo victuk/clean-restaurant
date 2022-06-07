@@ -3,7 +3,7 @@ var data = [
         id: 0,
         img: 'images/img-08.jpg',
         name: 'Afang soup',
-        price: 700,
+        price: 1200,
         category: 'lunch',
         quantity: 1
         
@@ -44,7 +44,7 @@ var data = [
         id: 5,
         img: 'images/img-08.jpg',
         name: 'Abasha',
-        price: 500,
+        price: 1300,
         category: 'dinner',
         quantity: 1
     },
@@ -52,15 +52,15 @@ var data = [
         id: 6,
         img: 'images/img-08.jpg',
         name: 'Bitter Leaf soup',
-        price: 800,
+        price: 1100,
         category: 'dinner',
         quantity: 1
     },
     {
         id: 7,
         img: 'images/img-08.jpg',
-        name: 'Jolly Rice',
-        price: 1400,
+        name: 'Jollof Rice',
+        price: 1200,
         category: 'dinner',
         quantity: 1
     },
@@ -68,31 +68,31 @@ var data = [
         id: 8,
         img: 'images/img-08.jpg',
         name: 'Red Wine',
-        price: 1400,
+        price: 1600,
         category: 'drink',
         quantity: 1
     },
     {
         id: 9,
-        img: 'images/star.jpg',
+        img: 'images/star.png',
         name: 'Star',
-        price: 1400,
+        price: 500,
         category: 'drink',
         quantity: 1
     },
     {
         id: 10,
-        img: 'images/img-08.png',
+        img: 'images/fanta.png',
         name: 'Fanta',
-        price: 1400,
+        price: 200,
         category: 'drink',
         quantity: 1
     },
     {
         id: 11,
-        img: 'images/fanta.png',
+        img: 'images/coke.jpg',
         name: 'Coke',
-        price: 1400,
+        price: 200,
         category: 'drink',
         quantity: 1
     },
