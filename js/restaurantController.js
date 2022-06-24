@@ -6,8 +6,8 @@ data.forEach(item => {
     showList.innerHTML+= `
 
     <div class="col-lg-4 col-md-6 special-grid drinks">
-					<div class="gallery-single fix">
-						<img src="${item.img}" class="img-fluid" alt="Image">
+					<div class="gallery-single fix img-control">
+						<img src="${item.img}" class="img-fluid img-size" alt="Image">
 						<div class="why-text">
 							<h4>${item.name}</h4>
 							<p>Category: ${item.category}</p>
@@ -25,8 +25,8 @@ function filterCategories(control) {
     data.forEach(item => {
         showList.innerHTML+= `
         <div class="col-lg-4 col-md-6 special-grid drinks">
-                        <div class="gallery-single fix">
-                            <img src="${item.img}" class="img-fluid" alt="Image">
+                        <div class="gallery-single fix img-control">
+                            <img src="${item.img}" class="img-fluid img-size" alt="Image">
                             <div class="why-text">
                                 <h4>Special Drinks 1</h4>
                                 <p>Category: ${item.category}</p>
@@ -46,8 +46,8 @@ function filterCategories(control) {
             showList.innerHTML+= `
         
             <div class="col-lg-4 col-md-6 special-grid drinks">
-                            <div class="gallery-single fix">
-                                <img src="${item.img}" class="img-fluid" alt="Image">
+                            <div class="gallery-single fix img-control">
+                                <img src="${item.img}" class="img-fluid img-size" alt="Image">
                                 <div class="why-text">
                                     <h4>Special Drinks 1</h4>
                                     <p>Category: ${item.category}</p>

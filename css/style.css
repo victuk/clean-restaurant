@@ -1326,7 +1326,15 @@ blockquote {
 
 
 
+.img-control {
+    height: 220px;
+}
 
+.img-size {
+    height: 100%;
+    width: 100%;
+    /* background-size: cover!important; */
+}
 
 
 

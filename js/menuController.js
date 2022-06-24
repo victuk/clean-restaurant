@@ -5,8 +5,8 @@ data.forEach(item => {
     showList.innerHTML+= `
 
     <div class="col-lg-4 col-md-6 special-grid drinks">
-					<div class="gallery-single fix">
-						<img src="${item.img}" class="img-fluid" alt="Image">
+					<div class="gallery-single fix img-control">
+						<img src="${item.img}" class="img-fluid img-size" alt="Image">
 						<div class="why-text">
 							<h4>${item.name}</h4>
 							<p>Category: ${item.category}</p>
@@ -24,10 +24,10 @@ function filterCategories(control) {
     data.forEach(item => {
         showList.innerHTML+= `
         <div class="col-lg-4 col-md-6 special-grid drinks">
-                        <div class="gallery-single fix">
-                            <img src="${item.img}" class="img-fluid" alt="Image">
+                        <div class="gallery-single fix img-control">
+                            <img src="${item.img}" class="img-fluid img-size" alt="Image">
                             <div class="why-text">
-                                <h4>Special Drinks 1</h4>
+                                <h4>${item.name}</h4>
                                 <p>Category: ${item.category}</p>
                                 <h5>N${item.price}</h5>
                                 <div id="add-to-cart" style="color: white; font-weight: bold; font-size: 20px; cursor: pointer; display: inline-block;" onclick='addToCart(${item.id})'>Add</div>
@@ -45,10 +45,10 @@ function filterCategories(control) {
             showList.innerHTML+= `
         
             <div class="col-lg-4 col-md-6 special-grid drinks">
-                            <div class="gallery-single fix">
-                                <img src="${item.img}" class="img-fluid" alt="Image">
+                            <div class="gallery-single fix img-control">
+                                <img src="${item.img}" class="img-fluid img-size" alt="Image">
                                 <div class="why-text">
-                                    <h4>Special Drinks 1</h4>
+                                    <h4>${item.name}</h4>
                                     <p>Category: ${item.category}</p>
                                     <h5>N${item.price}</h5>
                                     <div id="add-to-cart" style="color: white; font-weight: bold; font-size: 20px; cursor: pointer; display: inline-block;" onclick='addToCart(${item.id})'>Add</div>
